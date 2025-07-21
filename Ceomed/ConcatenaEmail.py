@@ -2,17 +2,7 @@ import openpyxl
 import pandas as pd
 
 def concatenar_emails_excel(caminho_arquivo_excel, nome_coluna_email):
-    """
-    Lê e-mails de um arquivo Excel e os concatena com um ponto e vírgula como separador.
 
-    Args:
-        caminho_arquivo_excel (str): O caminho completo para o arquivo Excel.
-        nome_coluna_email (str): O nome da coluna que contém os endereços de e-mail.
-
-    Returns:
-        str: Uma string contendo todos os e-mails concatenados, separados por ponto e vírgula.
-             Retorna uma string vazia se nenhum e-mail for encontrado ou se o arquivo/coluna for inválido.
-    """
     try:
         # Carrega o arquivo Excel em um DataFrame do pandas
         # Use a variável caminho_arquivo_excel aqui
